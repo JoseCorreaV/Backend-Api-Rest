@@ -1,6 +1,6 @@
 /* ------------------------------------------------- */
 const express = require('express');
-const cors = require('cors');
+// const cors = require('cors'); // sirve para unir el frontend
 const routerApi = require('./routes');
 
 const { logErrors, errorHandler, BoomerrorHandler } = require('./middlewares/error.handler');
@@ -10,6 +10,7 @@ const port = process.env.PORT || 3000;
 
 //mideware para resivir información tipo Json
 app.use(express.json());
+/* Este code sirve para unir el frontend con heroku
 
 // origienes en los que recibe peticiones
 const whilelist = ['http:localhost:8080', 'htpps://myapp.com'];
@@ -24,7 +25,7 @@ const options = {
     }
   }
 }
-app.use(cors(options)); // para habilitar a cualquier dominio
+app.use(cors(options)); // para habilitar a cualquier dominio */
 /* -------------------------Ruta por defecto------------------------ */
 // ruta por defecto
 app.get('/', (req, res) => {
