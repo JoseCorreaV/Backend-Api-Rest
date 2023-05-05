@@ -73,3 +73,6 @@ npm i cors
 Heroku => tener ya una cuenta
 
 npm install -g heroku
+
+------------------------------------------
+Para probar el proyecto ingresar en el navegador => http://localhost:3000/api/v1/products
